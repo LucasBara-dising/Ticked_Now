@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Favortios">
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="68dp"
+        android:drawingCacheQuality="high"
+        android:letterSpacing="0.05"
+        android:text="@string/TxtFavoritos"
+        android:textColor="@color/AzulBase"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="308dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="132dp"
+        android:background="@drawable/IconTelaFavorito"
+        android:contentDescription="@string/descImgDesenhoHisteVazio"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/TxtFavoritosMensagem"
+        android:textAlignment="center"
+        android:textColor="@color/AzulBase"
+        android:textSize="22sp"
+        android:paddingEnd="50dp"
+        android:paddingStart="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView16" />
+
+    <Button
+        android:id="@+id/BtnMostraRecomendados"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="45dp"
+        android:backgroundTint="@color/AzulBase"
+        android:textColor="@color/white"
+        android:text="@string/TxtbtnBuscar"
+        android:textAllCaps="false"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView26" />
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgBtnPesq"
+            style="@style/IconBottomBar"
+            android:layout_gravity="start"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/localizacao"/>
+
+        <ImageButton
+            android:id="@+id/imgBtnHome"
+            style="@style/IconBottomBar"
+            android:layout_gravity="center"
+            android:layout_marginTop="-6dp"
+            android:layout_marginEnd="70dp"
+            android:background="@drawable/casa" />
+
+        <ImageButton
+            android:id="@+id/imgBtnLoc"
+            style="@style/IconBottomBar"
+            android:layout_gravity="center"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="-6dp"
+            android:background="@drawable/bilhete"/>
+
+        <ImageButton
+            android:id="@+id/imgBtnFav"
+            style="@style/IconBottomBar"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="60dp"
+            android:background="@drawable/favorito" />
+
+        <TextView
+            android:id="@+id/textView43"
+            style="@style/TxtBottomBar"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/TxtLocBar"/>
+
+
+        <TextView
+            android:id="@+id/textView40"
+            style="@style/TxtBottomBar"
+            android:layout_gravity="start"
+            android:layout_marginStart="115dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/TxtHomesBar"/>
+
+        <TextView
+            android:id="@+id/textView41"
+            style="@style/TxtBottomBar"
+            android:layout_gravity="center"
+            android:layout_marginEnd="-25dp"
+            android:layout_marginTop="16dp"
+            android:text="@string/TxtIngressoBar"/>
+
+        <TextView
+            android:id="@+id/textView42"
+            style="@style/TxtBottomBar"
+            android:layout_gravity="end"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="50dp"
+            android:text="@string/TxtFavoritosBar"/>
+
+    </androidx.cardview.widget.CardView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

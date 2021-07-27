@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">Ticked Now</string>
+
+    <string name="TxtFavoritos">Favoritos</string>
+    <string name="TxtFavoritosMensagem">Você ainda não tem nem um evento favorito</string>
+    <string name="TxtbtnBuscar">Procurar eventos</string>
+
+    <!--Buttom bar-->
+    <string name="TxtFavoritosBar">Favoritos</string>
+    <string name="TxtLocBar">Localização</string>
+    <string name="TxtHomesBar">Home</string>
+    <string name="TxtIngressoBar">Ingresso</string>
+
+
+<!-- Info Hotel-->
+    <string name="TxtNomeEvento">Ta Embarcado - FABIO RABIN</string>
+    <string name="TxtClasseEvento">Stand up</string>
+    <string name="TxtHoraEvento">Sáb e Dom às 18h30, Sáb às 20h00</string>
+    <string name="TxtDataEvento">31 de Julho a 8 de Agosto</string>
+    <string name="TxtLocal">Teatro das Artes</string>
+    <string name="TxtDescEvento">Descrição</string>
+    <string name="TxtDescEventoTexto">“TÁ EMBAÇADO!” é o título de seu novo show, o 4.º solo de sua carreira.
+    O título reflete o momento da vida de um homem que tenta escapar da rotina para salvar seu relacionamento,
+    mas enfrenta dificuldades enormes como a TPM de sua esposa e sua própria falta de sensibilidade dentro de
+    seu casamento. Além disso, tem que criar uma filha que está crescendo e começando a questionar o mundo para
+    um pai que quase sempre não tem as respostas certas… Talvez este seja seu show mais polêmico, pois além da
+    família, aborda grandes tabus como: Drogas, preconceito e o “politicamente correto”, que tenta impor ao comediante limites em sua criatividade.</string>
+    <string name="TxtLocEvento">Localização</string>
+    <string name="TxtLocalizacaoEvento">Av. Rebouças, 3970 Lj 409, São Paulo - São Paulo</string>
+    <string name="TxtClassificaoEtaria">Classificação Etária:</string>
+    <string name="TxtClasEtaria">14 Anos</string>
+
+    <string name="txtBtnComprar">Comprar</string>
+
+
+    <!--    descrisão de imagens-->
+    <string name="descImgCartaz">Cartaz do evento</string>
+    <string name="descImgRelogio">Icon Relogio</string>
+    <string name="descImgLocalizacao">Icon Localização</string>
+    <string name="descImgDesenhoHisteVazio">Icon Trsite</string>
+</resources>

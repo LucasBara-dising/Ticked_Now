@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".InfoEvento">
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imageView20"
+                android:layout_width="match_parent"
+                android:layout_height="190dp"
+                android:contentDescription="@string/descImgCartaz"
+                android:scaleType="centerCrop"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/Poster1" />
+
+            <ImageView
+                android:id="@+id/ImgFavoritar"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="end"
+                android:layout_marginTop="-170dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="160dp"
+                app:srcCompat="@drawable/favorito" />
+
+
+            <TextView
+                android:id="@+id/textView40"
+                style="TxtInfoHotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/TxtNomeEvento"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView5"
+                style="@style/TxtInfoEvento"
+                android:text="@string/TxtClasseEvento"
+                android:textColor="@color/AzulBase"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnImageLoc"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:background="@color/white"
+                android:contentDescription="@string/descImgRelogio"
+                app:srcCompat="@drawable/hora_evento" />
+
+            <TextView
+                android:id="@+id/horaevento"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="-35dp"
+                android:text="@string/TxtHoraEvento"
+                android:textAllCaps="false"
+                android:textColor="@color/black"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtLocHotel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="5dp"
+                android:text="@string/TxtDataEvento"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+                android:textStyle="italic" />
+
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="20dp"
+                android:contentDescription="@string/descImgLocalizacao"
+                app:srcCompat="@drawable/localizacao" />
+
+
+            <TextView
+                style="@style/TxtInfoEvento"
+                android:layout_marginStart="40dp"
+                android:layout_marginTop="-25dp"
+                android:text="@string/TxtLocal"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/TxtInfoEvento"
+                android:layout_marginTop="30dp"
+                android:text="@string/TxtDescEvento"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif"
+                android:padding="20dp"
+                android:text="@string/TxtDescEventoTexto"
+                android:textColor="@color/black" />
+
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/TxtInfoEvento"
+                android:layout_marginTop="20dp"
+                android:text="@string/TxtLocBar"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView7"
+                style="@style/TxtInfoEvento"
+                android:layout_marginTop="15dp"
+                android:text="@string/TxtLocalizacaoEvento" />
+
+
+            <TextView
+                android:id="@+id/textView19"
+                style="@style/TxtInfoEvento"
+                android:layout_marginTop="20dp"
+                android:text="@string/TxtClassificaoEtaria"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView20"
+                style="@style/TxtInfoEvento"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="120dp"
+                android:text="@string/TxtClasEtaria"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/myRectangleView5"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        app:backgroundTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_margin="30dp"
+        android:text="@string/txtBtnComprar"
+        app:backgroundTint="@color/AzulBase"
+        app:layout_constraintBottom_toBottomOf="@+id/myRectangleView5"
+        app:layout_constraintStart_toStartOf="@+id/myRectangleView5"
+        app:layout_constraintTop_toTopOf="@+id/myRectangleView5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
