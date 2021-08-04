@@ -3,13 +3,12 @@ package com.example.tickednow;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
-import android.widget.Button;
 
-public class Favortios extends AppCompatActivity {
+public class Conta extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_favortios);
+        setContentView(R.layout.activity_conta);
     }
 }

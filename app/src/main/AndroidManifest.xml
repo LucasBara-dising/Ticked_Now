@@ -8,8 +8,17 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.TickedNow">
-        <activity android:name=".InfoEvento"></activity>
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Pesquisa_evento"
+            android:exported="true" />
+        <activity
+            android:name=".Conta"
+            android:exported="true" />
+        <activity
+            android:name=".InfoEvento"
+            android:exported="true" />
+        <activity android:name=".EscolhaIngresso" />
         <activity android:name=".Favortios" />
         <activity android:name=".MainActivity">
             <intent-filter>

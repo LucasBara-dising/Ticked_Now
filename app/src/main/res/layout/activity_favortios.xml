@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".Favortios">
 
     <TextView
@@ -26,7 +27,7 @@
         android:layout_width="308dp"
         android:layout_height="200dp"
         android:layout_marginTop="132dp"
-        android:background="@drawable/IconTelaFavorito"
+        android:background="@drawable/icon_tela_favorito"
         android:contentDescription="@string/descImgDesenhoHisteVazio"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +75,7 @@
             android:id="@+id/imgBtnPesq"
             style="@style/IconBottomBar"
             android:layout_gravity="start"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="40dp"
             android:layout_marginTop="10dp"
             android:background="@drawable/localizacao"/>
 
@@ -83,14 +84,14 @@
             style="@style/IconBottomBar"
             android:layout_gravity="center"
             android:layout_marginTop="-6dp"
-            android:layout_marginEnd="70dp"
+            android:layout_marginEnd="60dp"
             android:background="@drawable/casa" />
 
         <ImageButton
             android:id="@+id/imgBtnLoc"
             style="@style/IconBottomBar"
             android:layout_gravity="center"
-            android:layout_marginStart="24dp"
+            android:layout_marginStart="35dp"
             android:layout_marginTop="-6dp"
             android:background="@drawable/bilhete"/>
 
@@ -99,14 +100,14 @@
             style="@style/IconBottomBar"
             android:layout_gravity="end"
             android:layout_marginTop="8dp"
-            android:layout_marginEnd="60dp"
+            android:layout_marginEnd="50dp"
             android:background="@drawable/favorito" />
 
         <TextView
             android:id="@+id/textView43"
             style="@style/TxtBottomBar"
             android:layout_gravity="start"
-            android:layout_marginStart="10dp"
+            android:layout_marginStart="20dp"
             android:layout_marginTop="40dp"
             android:text="@string/TxtLocBar"/>
 
@@ -114,17 +115,17 @@
         <TextView
             android:id="@+id/textView40"
             style="@style/TxtBottomBar"
-            android:layout_gravity="start"
-            android:layout_marginStart="115dp"
-            android:layout_marginTop="40dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="60dp"
+            android:layout_marginTop="20dp"
             android:text="@string/TxtHomesBar"/>
 
         <TextView
             android:id="@+id/textView41"
             style="@style/TxtBottomBar"
             android:layout_gravity="center"
-            android:layout_marginEnd="-25dp"
-            android:layout_marginTop="16dp"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="20dp"
             android:text="@string/TxtIngressoBar"/>
 
         <TextView
@@ -132,7 +133,7 @@
             style="@style/TxtBottomBar"
             android:layout_gravity="end"
             android:layout_marginTop="40dp"
-            android:layout_marginEnd="50dp"
+            android:layout_marginEnd="35dp"
             android:text="@string/TxtFavoritosBar"/>
 
     </androidx.cardview.widget.CardView>

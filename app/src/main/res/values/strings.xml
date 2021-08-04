@@ -12,7 +12,52 @@
     <string name="TxtIngressoBar">Ingresso</string>
 
 
-<!-- Info Hotel-->
+    <!--==========Tela pesquisa evento===========-->
+    <string name="TxtBusca">Buscar</string>
+    <string name="TxtPesq">Pesquisar</string>
+
+    <!-- evento1-->
+    <string name="TxtNomeEvento1">Ta Embarcado - FABIO RABIN</string>
+    <string name="TxtHoraEvento1">Sáb e Dom às 18:30, Sáb às 20:00</string>
+    <string name="TxtLocalEvento1">Teatro das Artes</string>
+    <!-- evento1-->
+    <string name="TxtNomeEvento2">Breve Festival 2022</string>
+    <string name="TxtHoraEvento2">09 de abril de 2022, 12h-23h59</string>
+    <string name="TxtLocalEvento2">Mineirão - Belo Horizonte, MG</string>
+    <!-- evento1-->
+    <string name="TxtNomeEvento3">Festival Sarará 2022</string>
+    <string name="TxtHoraEvento3">27 de agosto de 2022, 12h - 28 de agosto de 2022, 00h</string>
+    <string name="TxtLocalEvento3">Esplanada Mineirão - Belo Horizonte, MG</string>
+    <!-- evento1-->
+    <string name="TxtNomeEvento4">ARRAIÁ DO VIBRÁ - ELBA RAMALHO</string>
+    <string name="TxtHoraEvento4">Sáb às 17:00, 21 Ago</string>
+    <string name="TxtLocalEvento4">Parque Vibrar - Ginásio Nilson Nelson</string>
+
+    <!--============== Tela conta================-->
+    <string name="TxtConta">Conta</string>
+    <string name="TxtNomeUser">Luiz Maia</string>
+    <string name="TxtEmailUser">Maia.Luiz@gmail.com</string>
+    <string name="TxtPontosDisp">Pontos disponíveis</string>
+    <string name="TxtPontZERO">0</string>
+    <string name="TxtPais">País</string>
+    <string name="TxtRUS">RUS</string>
+    <string name="TxtInfoConta">Informações da minha conta</string>
+    <string name="TxtCuponsCred">Cupons e créditos</string>
+    <string name="TxtTema">Escolha um tema</string>
+    <string name="TxtPadrao">Padrão</string>
+    <string name="TxtCom">Comunicação</string>
+    <string name="TxtAvalie">Avalie o app</string>
+    <string name="TxtHistorico">Historico de busca</string>
+    <string name="TxtSuporte">Surporte</string>
+    <string name="TxtInfoLegais">Informaçoes legais</string>
+    <string name="TxtTermosCond">Temos e condições</string>
+    <string name="TxtCert">Certificações</string>
+    <string name="TxtLogout">Fazer logout</string>
+    <string name="TxtClaro">Tema</string>
+    <string name="TxtEscuro">Escuro</string>
+
+
+    <!-- ================Info evento================-->
     <string name="TxtNomeEvento">Ta Embarcado - FABIO RABIN</string>
     <string name="TxtClasseEvento">Stand up</string>
     <string name="TxtHoraEvento">Sáb e Dom às 18h30, Sáb às 20h00</string>
@@ -29,13 +74,26 @@
     <string name="TxtLocalizacaoEvento">Av. Rebouças, 3970 Lj 409, São Paulo - São Paulo</string>
     <string name="TxtClassificaoEtaria">Classificação Etária:</string>
     <string name="TxtClasEtaria">14 Anos</string>
-
     <string name="txtBtnComprar">Comprar</string>
 
+    <!--tela ingressos-->
+    <string name="txtIngressos">Ingressos</string>
+    <string name="txtIngressosIntera">INTEIRA</string>
+    <string name="txtIngressosMEia">MEIA</string>
+    <string name="txtIngressosIdoso">IDOSO</string>
+    <string name="txtValorInteita">70,00 (taxa R$:2,00)</string>
+    <string name="txtValorMeia">35,00 (taxa R$:2,00)</string>
+    <string name="txtValorIdoso">35,00 (taxa R$:2,00)</string>
+    <string name="txtNumpass">0</string>
+    <string name="txtTotal">Total:</string>
+    <string name="txtTotalvl">00,00</string>
+    <string name="txtAvancar">Avançar</string>
 
     <!--    descrisão de imagens-->
     <string name="descImgCartaz">Cartaz do evento</string>
     <string name="descImgRelogio">Icon Relogio</string>
     <string name="descImgLocalizacao">Icon Localização</string>
     <string name="descImgDesenhoHisteVazio">Icon Trsite</string>
+    <string name="descImgSeta">seta para voltar para a ultima tela</string>
+    <string name="descImgSino">Icon de sino Para notficações</string>
 </resources>

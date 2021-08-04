@@ -4,7 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/white"
     tools:context=".InfoEvento">
+
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -24,7 +26,8 @@
                 android:scaleType="centerCrop"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/Poster1" />
+                app:srcCompat="@drawable/poster5" />
+
 
             <ImageView
                 android:id="@+id/ImgFavoritar"
@@ -34,7 +37,15 @@
                 android:layout_marginTop="-170dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="160dp"
-                app:srcCompat="@drawable/favorito" />
+                android:background="@drawable/favorito" />
+
+            <ImageButton
+                android:id="@+id/btnVoltaPesquisa"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="-200dp"
+                android:layout_marginBottom="160dp"
+                android:background="@drawable/fecha" />
 
 
             <TextView
@@ -72,7 +83,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="45dp"
-                android:layout_marginTop="-35dp"
+                android:layout_marginTop="-25dp"
                 android:text="@string/TxtHoraEvento"
                 android:textAllCaps="false"
                 android:textColor="@color/black"
@@ -156,23 +167,29 @@
                 android:layout_marginBottom="120dp"
                 android:text="@string/TxtClasEtaria"
                 android:textSize="16sp" />
+
         </LinearLayout>
     </ScrollView>
 
-    <View
-        android:id="@+id/myRectangleView5"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardFundoComprar"
         android:layout_width="match_parent"
         android:layout_height="100dp"
-        app:backgroundTint="@color/white"
-        app:layout_constraintBottom_toBottomOf="parent" />
+        app:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" >
 
     <Button
+        android:id="@+id/btnComprarIngresso"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_margin="30dp"
+        android:textColor="@color/white"
         android:text="@string/txtBtnComprar"
         app:backgroundTint="@color/AzulBase"
-        app:layout_constraintBottom_toBottomOf="@+id/myRectangleView5"
-        app:layout_constraintStart_toStartOf="@+id/myRectangleView5"
-        app:layout_constraintTop_toTopOf="@+id/myRectangleView5" />
+        app:layout_constraintBottom_toBottomOf="@+id/cardFundoComprar"
+        app:layout_constraintStart_toStartOf="@+id/cardFundoComprar"
+        app:layout_constraintTop_toTopOf="@+id/cardFundoComprar" />
+
+    </androidx.cardview.widget.CardView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -8,5 +8,6 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="AzulBase">#3F51B5</color>
+    <color name="AzulBase">#3f51d9</color>
+    <color name="AzulClaro">#2c58d1</color>
 </resources>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".EscolhaIngresso">
+
+    <View
+        android:id="@+id/myRectangleView3"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtView12"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="@string/txtIngressos"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgBtnVoltaHome"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/seta_volta_azul" />
+
+    <View
+        android:id="@+id/divider1"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="25dp"
+        android:background="#dcdcdc"
+        app:layout_constraintTop_toBottomOf="@+id/myRectangleView3"/>
+    <!-- ==================corpo=================-->
+<!-- interira-->
+    <TextView
+        android:id="@+id/txtView1"
+        style="@style/TxtIngressoFaixa"
+        android:text="@string/txtIngressosIntera"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myRectangleView3" />
+
+    <TextView
+        android:id="@+id/txtView2"
+        style="@style/TxtIngressoPreco"
+        android:text="@string/txtValorInteita"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtView1" />
+
+    <ImageButton
+        android:id="@+id/btnMenosPass"
+        style="@style/iconseta"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="100dp"
+        android:background="@drawable/seta_esquerda"
+        app:layout_constraintStart_toEndOf="@+id/txtView1"
+        app:layout_constraintTop_toBottomOf="@+id/myRectangleView3" />
+
+    <TextView
+        android:id="@+id/numPassInteira"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="@string/txtNumpass"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnMaisPass"
+        app:layout_constraintStart_toEndOf="@+id/btnMenosPass"
+        app:layout_constraintTop_toBottomOf="@+id/myRectangleView3" />
+
+    <ImageButton
+        android:id="@+id/btnMaisPass"
+        style="@style/iconseta"
+        android:background="@drawable/seta_direita"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/myRectangleView3" />
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="25dp"
+        android:background="#dcdcdc"
+        app:layout_constraintTop_toBottomOf="@+id/txtView2"/>
+
+
+    <!-- meia-->
+    <TextView
+        android:id="@+id/txtView4"
+        style="@style/TxtIngressoFaixa"
+        android:text="@string/txtIngressosMEia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <TextView
+        android:id="@+id/txtView5"
+        style="@style/TxtIngressoPreco"
+        android:text="@string/txtValorMeia"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtView4" />
+
+    <ImageButton
+        android:id="@+id/btnMenosPassMeia"
+        style="@style/iconseta"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="centerCrop"
+        android:background="@drawable/seta_esquerda"
+        app:layout_constraintStart_toEndOf="@+id/txtView1"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"/>
+
+    <TextView
+        android:id="@+id/numPassMeia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="18dp"
+        android:text="@string/txtNumpass"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnMaisPass"
+        app:layout_constraintStart_toEndOf="@+id/btnMenosPass"
+        app:layout_constraintTop_toBottomOf="@+id/divider2" />
+
+    <ImageButton
+        android:id="@+id/btnMaisPassMeia"
+        style="@style/iconseta"
+        android:background="@drawable/seta_direita"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider2"/>
+
+    <View
+        android:id="@+id/divider3"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="25dp"
+        android:background="#dcdcdc"
+        app:layout_constraintTop_toBottomOf="@+id/txtView5"/>
+
+
+    <!-- idoso-->
+    <TextView
+        android:id="@+id/txtView6"
+        style="@style/TxtIngressoFaixa"
+        android:text="@string/txtIngressosIdoso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <TextView
+        android:id="@+id/txtView7"
+        style="@style/TxtIngressoPreco"
+        android:text="@string/txtValorIdoso"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtView6" />
+
+    <ImageButton
+        android:id="@+id/btnMenosPassIdoso"
+        style="@style/iconseta"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="100dp"
+        android:background="@drawable/seta_esquerda"
+        app:layout_constraintStart_toEndOf="@+id/txtView1"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <TextView
+        android:id="@+id/numPassIdoso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="28dp"
+        android:text="@string/txtNumpass"
+        android:textColor="@color/black"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toStartOf="@+id/btnMaisPass"
+        app:layout_constraintStart_toEndOf="@+id/btnMenosPass"
+        app:layout_constraintTop_toBottomOf="@+id/divider3" />
+
+    <ImageButton
+        android:id="@+id/btnMaisPassIdoso"
+        style="@style/iconseta"
+        android:background="@drawable/seta_direita"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divider3"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:text="@string/txtTotal"
+        android:textColor="@color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/textviewTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:layout_marginStart="10dp"
+        android:textSize="26sp"
+        android:text="@string/txtTotalvl"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_margin="20dp"
+        app:backgroundTint="@color/AzulClaro"
+        android:textColor="@color/white"
+        android:background="@drawable/borda_aredondada"
+        android:text="@string/txtAvancar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

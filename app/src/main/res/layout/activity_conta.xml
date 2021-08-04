@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDEDED"
+    tools:context=".Conta">
+
+    <ScrollView
+        android:id="@+id/scrollView3"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/txtView7"
+                    style="@style/TxtPadraoConta"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:text="@string/TxtNomeUser"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtView28"
+                    style="@style/TxtPadraoConta"
+                    android:layout_marginStart="18dp"
+                    android:layout_marginTop="70dp"
+                    android:text="@string/TxtEmailUser"
+                    android:textSize="14sp"/>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtView33"
+                style="@style/TxtPadraoConta"
+                android:layout_margin="15dp"
+                android:text="@string/TxtConta"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/button3"
+                style="@style/BtnPadraoConta"
+                android:layout_marginTop="5dp"
+                android:text="@string/TxtInfoConta"/>
+
+
+            <Button
+                android:id="@+id/button4"
+                style="@style/BtnPadraoConta"
+                android:text="@string/TxtCuponsCred"/>
+
+            <TextView
+                android:id="@+id/txtView34"
+                style="@style/TxtPadraoConta"
+                android:layout_margin="15dp"
+                android:text="@string/TxtTema"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <Switch
+                android:id="@+id/switch1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:buttonTint="@color/AzulBase"
+                android:switchPadding="9dp"
+                android:text="@string/TxtClaro"
+                android:thumbTint="@color/AzulBase"
+                android:trackTint="@color/AzulBase"
+                tools:checked="true"
+                tools:ignore="UseSwitchCompatOrMaterialXml" />
+
+            <TextView
+                android:id="@+id/txtView35"
+                style="@style/TxtPadraoConta"
+                android:layout_margin="15dp"
+                android:text="@string/TxtCom"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/button5"
+                style="@style/BtnPadraoConta"
+                android:text="@string/TxtAvalie"/>
+
+            <Button
+                android:id="@+id/button6"
+                style="@style/BtnPadraoConta"
+                android:text="@string/TxtSuporte"/>
+
+            <TextView
+                android:id="@+id/txtView37"
+                style="@style/TxtPadraoConta"
+                android:layout_margin="15dp"
+                android:text="@string/TxtInfoLegais"
+                android:textSize="16sp"
+                android:textStyle="bold"/>
+
+            <Button
+                android:id="@+id/button8"
+                style="@style/BtnPadraoConta"
+                android:text="@string/TxtTermosCond"/>
+
+            <Button
+                android:id="@+id/button10"
+                style="@style/BtnPadraoConta"
+                android:text="@string/TxtCert"/>
+
+
+            <Button
+                android:id="@+id/btnLogout"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:layout_marginBottom="45dp"
+                android:background="@drawable/borda_aredondada"
+                app:backgroundTint="@color/AzulClaro"
+                android:padding="10dp"
+                android:text="@string/TxtLogout"
+                android:textAllCaps="false"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/myRectangleView5"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/AzulBase"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/descImgSeta"/>
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="38dp"
+        android:layout_height="38dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sino"
+        android:contentDescription="@string/descImgSino"/>
+
+    <ImageButton
+        android:id="@+id/imgBtnVoltaHome4"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:background="@color/AzulClaro"
+        android:scaleType="centerCrop"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/fecha" />
+
+    <TextView
+        android:id="@+id/txtView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:text="@string/TxtConta"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/imgBtnVoltaHome4"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
