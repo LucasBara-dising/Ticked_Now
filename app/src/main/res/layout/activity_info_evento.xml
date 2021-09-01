@@ -28,16 +28,17 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:srcCompat="@drawable/poster5" />
 
-
-            <ImageView
-                android:id="@+id/ImgFavoritar"
+            <CheckBox
+                android:id="@+id/checkbox_meat"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="end"
                 android:layout_marginTop="-170dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginBottom="160dp"
-                android:background="@drawable/favorito" />
+                android:background="@drawable/favorito"
+                android:button="@color/AzulBase"
+                android:onClick="onCheckboxClicked" />
 
             <ImageButton
                 android:id="@+id/btnVoltaPesquisa"
@@ -167,6 +168,7 @@
                 android:layout_marginBottom="120dp"
                 android:text="@string/TxtClasEtaria"
                 android:textSize="16sp" />
+
 
         </LinearLayout>
     </ScrollView>

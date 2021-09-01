@@ -16,11 +16,11 @@
             android:name=".Conta"
             android:exported="true" />
         <activity
-            android:name=".InfoEvento"
+            android:name=".MainActivity"
             android:exported="true" />
         <activity android:name=".EscolhaIngresso" />
         <activity android:name=".Favortios" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".InfoEvento">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
