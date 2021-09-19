@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.tickednow">
 
+    <!--permissoes-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +14,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/google_maps_key" />
+
+        <activity
+            android:name=".InfoEvento"
+            android:exported="true" />
         <activity
             android:name=".Pesquisa_evento"
             android:exported="true" />
@@ -20,7 +33,7 @@
             android:exported="true" />
         <activity android:name=".EscolhaIngresso" />
         <activity android:name=".Favortios" />
-        <activity android:name=".InfoEvento">
+        <activity android:name=".Tela_Maps">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

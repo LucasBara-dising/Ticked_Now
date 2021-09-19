@@ -72,7 +72,7 @@
         app:layout_constraintBottom_toBottomOf="parent">
 
         <ImageButton
-            android:id="@+id/imgBtnPesq"
+            android:id="@+id/imgBtnLoc"
             style="@style/IconBottomBar"
             android:layout_gravity="start"
             android:layout_marginStart="40dp"
@@ -84,11 +84,11 @@
             style="@style/IconBottomBar"
             android:layout_gravity="center"
             android:layout_marginTop="-6dp"
-            android:layout_marginEnd="60dp"
+            android:layout_marginEnd="40dp"
             android:background="@drawable/casa" />
 
         <ImageButton
-            android:id="@+id/imgBtnLoc"
+            android:id="@+id/imgBtnIngre"
             style="@style/IconBottomBar"
             android:layout_gravity="center"
             android:layout_marginStart="35dp"
@@ -111,12 +111,11 @@
             android:layout_marginTop="40dp"
             android:text="@string/TxtLocBar"/>
 
-
         <TextView
             android:id="@+id/textView40"
             style="@style/TxtBottomBar"
             android:layout_gravity="center"
-            android:layout_marginEnd="60dp"
+            android:layout_marginEnd="40dp"
             android:layout_marginTop="20dp"
             android:text="@string/TxtHomesBar"/>
 

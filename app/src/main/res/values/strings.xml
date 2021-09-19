@@ -96,4 +96,7 @@
     <string name="descImgDesenhoHisteVazio">Icon Trsite</string>
     <string name="descImgSeta">seta para voltar para a ultima tela</string>
     <string name="descImgSino">Icon de sino Para notficações</string>
+
+    <!-- chave api do google maps-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBbcdfu_p3Xgz_hDoZ8GcW0GFhqFOuD5zw</string>
 </resources>
