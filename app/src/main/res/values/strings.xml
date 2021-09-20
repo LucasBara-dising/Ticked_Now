@@ -1,6 +1,9 @@
 <resources>
     <string name="app_name">Ticked Now</string>
 
+    <!-- Home-->
+
+    <!--Tela favoritos-->
     <string name="TxtFavoritos">Favoritos</string>
     <string name="TxtFavoritosMensagem">Você ainda não tem nem um evento favorito</string>
     <string name="TxtbtnBuscar">Procurar eventos</string>
@@ -88,6 +91,10 @@
     <string name="txtTotal">Total:</string>
     <string name="txtTotalvl">00,00</string>
     <string name="txtAvancar">Avançar</string>
+
+    <!--Meus ingressos -->
+    <string name="txtIngresso">Meus Ingressos</string>
+    <string name="TxtIngressoMensagem">Você ainda não tem nem um ingresso para eventos</string>
 
     <!--    descrisão de imagens-->
     <string name="descImgCartaz">Cartaz do evento</string>

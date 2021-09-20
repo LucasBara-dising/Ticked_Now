@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ImageButton;
 
 public class Favortios extends AppCompatActivity {
@@ -15,13 +15,6 @@ public class Favortios extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_favortios);
 
-        Button BtnMostraRecomendados = (Button) findViewById(R.id.BtnMostraRecomendados);
-        BtnMostraRecomendados.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                TelaPesquisa();
-            }
-        });
 
         //barra de baixo
         ImageButton imgBtnLoc = (ImageButton) findViewById(R.id.imgBtnLoc);
@@ -31,15 +24,43 @@ public class Favortios extends AppCompatActivity {
                 TelaMaps();
             }
         });
+
+        ImageButton imgBtnIngre = (ImageButton) findViewById(R.id.imgBtnIngre);
+        imgBtnIngre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TelaIngresso();
+            }
+        });
     }
 
     public  void TelaMaps(){
         Intent Maps = new Intent(getApplicationContext(), Tela_Maps.class);
         startActivity(Maps);
+        finish();
     }
 
-    public  void TelaPesquisa(){
-        Intent Pesquisa = new Intent(getApplicationContext(), Pesquisa_evento.class);
-        startActivity(Pesquisa);
+    public  void TelaIngresso(){
+        Intent Ingresso = new Intent(getApplicationContext(), Meus_Ingressos.class);
+        startActivity(Ingresso);
+        finish();
+    }
+
+
+    public void onCheckboxClicked(View view) {
+        boolean checked = ((CheckBox) view).isChecked();
+        CheckBox CkboxFav = (CheckBox) findViewById(R.id.CkboxFav);
+
+        switch(view.getId()) {
+            case R.id.CkboxFav:
+                if (checked){
+                    CkboxFav.setBackgroundResource(R.drawable.favorito_preenchido);
+                }
+                else {
+                    CkboxFav.setBackgroundResource(R.drawable.favorito);
+                }
+            break;
+        }
+
     }
 }

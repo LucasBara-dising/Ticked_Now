@@ -29,7 +29,7 @@
                 app:srcCompat="@drawable/poster5" />
 
             <CheckBox
-                android:id="@+id/checkbox_meat"
+                android:id="@+id/checkboxInfoFav"
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_gravity="end"

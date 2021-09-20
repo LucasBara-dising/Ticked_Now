@@ -53,13 +53,21 @@ public class Tela_Maps extends AppCompatActivity implements OnMapReadyCallback {
         mapFrag = (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);
         mapFrag.getMapAsync(this);
 
-        //ligacoes de telas
 
+        //ligacoes de telas
         ImageButton imgBtnFav = (ImageButton) findViewById(R.id.imgBtnFav);
         imgBtnFav.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 TelaFavoritos();
+            }
+        });
+
+        ImageButton imgBtnIngre = (ImageButton) findViewById(R.id.imgBtnIngre);
+        imgBtnIngre.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TelaMeusIngresso();
             }
         });
     }
@@ -217,11 +225,12 @@ public class Tela_Maps extends AppCompatActivity implements OnMapReadyCallback {
     public  void TelaFavoritos(){
         Intent Favoritos = new Intent(getApplicationContext(), Favortios.class);
         startActivity(Favoritos);
+        finish();
     }
 
-    //tela ainda não existe
-    /*public  void TelaMeusIngresso(){
-        Intent Ingressos = new Intent(getApplicationContext(), Ingressos.class);
+    public  void TelaMeusIngresso(){
+        Intent Ingressos = new Intent(getApplicationContext(), Meus_Ingressos.class);
         startActivity(Ingressos);
-    }*/
+        finish();
+    }
 }
