@@ -2,6 +2,22 @@
     <string name="app_name">Ticked Now</string>
 
     <!-- Home-->
+    <string name="TxtBarraPesquisa">Pesquise um destino</string>
+    <string name="TxtCategorias">Categorias</string>
+    <string name="TxtDestaques">Destaques</string>
+    <string name="TxtShows">Shows</string>
+    <string name="TxtEspetaculos">Espetáculos</string>
+    <string name="TxtExposicoes">Exposições</string>
+    <string name="TxtStandUp">Stand-Up</string>
+    <string name="TxtPalestras">Palestras</string>
+    <string name="TxtEventos">Eventos</string>
+    <string name="TxtVerMais">Ver Mais</string>
+    <string name="TxtContaOuLogin">Criar conta ou fazer login</string>
+    <string name="TxtExplorar">Explorar</string>
+    <string name="TxtHome">Início</string>
+    <string name="TxtIngressos">Ingressos</string>
+    <string name="TxtProcurar">Procurar por um destino</string>
+
 
     <!--Tela favoritos-->
     <string name="TxtFavoritos">Favoritos</string>
@@ -16,7 +32,7 @@
 
 
     <!--==========Tela pesquisa evento===========-->
-    <string name="TxtBusca">Buscar</string>
+    <string name="TxtBusca">Busque por eventos</string>
     <string name="TxtPesq">Pesquisar</string>
 
     <!-- evento1-->

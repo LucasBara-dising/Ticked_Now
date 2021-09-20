@@ -6,6 +6,7 @@
     android:name="com.google.android.gms.maps.SupportMapFragment"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:visibility="visible"
     tools:context=".Tela_Maps">
 
     <androidx.cardview.widget.CardView
@@ -19,7 +20,7 @@
             android:layout_gravity="start"
             android:layout_marginStart="40dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/localizacao"/>
+            android:background="@drawable/localizacao" />
 
         <ImageButton
             android:id="@+id/imgBtnHome"
@@ -35,7 +36,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="35dp"
             android:layout_marginTop="-6dp"
-            android:background="@drawable/bilhete"/>
+            android:background="@drawable/bilhete" />
 
         <ImageButton
             android:id="@+id/imgBtnFav"
@@ -51,16 +52,16 @@
             android:layout_gravity="start"
             android:layout_marginStart="20dp"
             android:layout_marginTop="40dp"
-            android:text="@string/TxtLocBar"/>
+            android:text="@string/TxtLocBar" />
 
 
         <TextView
             android:id="@+id/textView40"
             style="@style/TxtBottomBar"
             android:layout_gravity="center"
-            android:layout_marginEnd="40dp"
             android:layout_marginTop="20dp"
-            android:text="@string/TxtHomesBar"/>
+            android:layout_marginEnd="40dp"
+            android:text="@string/TxtHomesBar" />
 
         <TextView
             android:id="@+id/textView41"
@@ -68,7 +69,7 @@
             android:layout_gravity="center"
             android:layout_marginStart="35dp"
             android:layout_marginTop="20dp"
-            android:text="@string/TxtIngressoBar"/>
+            android:text="@string/TxtIngressoBar" />
 
         <TextView
             android:id="@+id/textView42"
@@ -76,7 +77,7 @@
             android:layout_gravity="end"
             android:layout_marginTop="40dp"
             android:layout_marginEnd="35dp"
-            android:text="@string/TxtFavoritosBar"/>
+            android:text="@string/TxtFavoritosBar" />
 
     </androidx.cardview.widget.CardView>
 
