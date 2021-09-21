@@ -32,6 +32,14 @@ public class Favortios extends AppCompatActivity {
                 TelaIngresso();
             }
         });
+
+        ImageButton imgBtnHome = (ImageButton) findViewById(R.id.imgBtnHome);
+        imgBtnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TelaHome();
+            }
+        });
     }
 
     public  void TelaMaps(){
@@ -43,6 +51,12 @@ public class Favortios extends AppCompatActivity {
     public  void TelaIngresso(){
         Intent Ingresso = new Intent(getApplicationContext(), Meus_Ingressos.class);
         startActivity(Ingresso);
+        finish();
+    }
+
+    public  void TelaHome(){
+        Intent home = new Intent(getApplicationContext(), Tela_Home.class);
+        startActivity(home);
         finish();
     }
 

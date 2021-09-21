@@ -40,6 +40,14 @@ public class Meus_Ingressos extends AppCompatActivity {
                 TelaFavorito();
             }
         });
+
+        ImageButton imgBtnHome = (ImageButton) findViewById(R.id.imgBtnHome);
+        imgBtnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TelaHome();
+            }
+        });
     }
 
     public  void TelaMaps(){
@@ -56,5 +64,11 @@ public class Meus_Ingressos extends AppCompatActivity {
     public  void TelaPesquisa(){
         Intent Pesquisa = new Intent(getApplicationContext(), Pesquisa_evento.class);
         startActivity(Pesquisa);
+    }
+
+    public  void TelaHome(){
+        Intent home = new Intent(getApplicationContext(), Tela_Home.class);
+        startActivity(home);
+        finish();
     }
 }

@@ -18,6 +18,93 @@
     <string name="TxtIngressos">Ingressos</string>
     <string name="TxtProcurar">Procurar por um destino</string>
 
+<!--Shows-->
+    <string name="TxtEventosShow1DT">Data: 27 de ago de 2022 - 28 de ago</string>
+    <string name="TxtEventosShow1NM">Nome:Festival Sarará 2022</string>
+    <string name="TxtEventosShow1LC">Local:Esplanada do Mineirão-MG</string>
+
+    <string name="TxtEventosShow2DT">Data: 26 de set de 2021</string>
+    <string name="TxtEventosShow2NM">Nome:ELBA RAMALHO</string>
+    <string name="TxtEventosShow2LC">Local:Parque Vibrar-DF</string>
+
+    <string name="TxtEventosShow3DT">Data: 09 de abri de 2022,</string>
+    <string name="TxtEventosShow3NM">Nome:Breve Festival 2022</string>
+    <string name="TxtEventosShow3LC">Local:Mineirão-MG</string>
+
+    <string name="TxtEventosShow4DT">Data: 31 de Jul a 8 de Ago </string>
+    <string name="TxtEventosShow4NM">Nome: Ta Embarcado</string>
+    <string name="TxtEventosShow4LC">Local:Teatro das Artes-SP</string>
+
+<!--pecas-->
+    <string name="TxtEventosPeca1DT">Data: 25 de set de 2021</string>
+    <string name="TxtEventosPeca1NM">Nome: Peça O Juíz de Paz na Roça</string>
+    <string name="TxtEventosPeca1LC">Local: Oficina De Atores Abel Santana-ES</string>
+
+    <string name="TxtEventosPeca2DT">Data: 2 de out de 2021</string>
+    <string name="TxtEventosPeca2NM">Nome: Peça teatral De onde vem o Baião</string>
+    <string name="TxtEventosPeca2LC">Local: Mural Casa Natura-Sp</string>
+
+    <string name="TxtEventosPeca3DT">Data: 12 OUt 2021</string>
+    <string name="TxtEventosPeca3NM">Nome: Tributo ao rei do pop</string>
+    <string name="TxtEventosPeca3LC">Local: Espaço Hall</string>
+
+    <string name="TxtEventosPeca4DT">Data: 25 a 26 de Jun 2020</string>
+    <string name="TxtEventosPeca4NM">Nome: the lord of the rings the two towers – in concert</string>
+    <string name="TxtEventosPeca4LC">Local: Ginásio do Ibirapuera-SP</string>
+
+    <!--EXposiscoes-->
+    <string name="TxtEventosExp1DT">Data: 24 a 26 de Jun 2021</string>
+    <string name="TxtEventosExp1NM">Nome: Mangalagar Marchador</string>
+    <string name="TxtEventosExp1LC">Local: Parque de exposições de Tamoios-RJ</string>
+
+    <string name="TxtEventosExp2DT">Data: 15 de out de 2020 a 9 de ago de 2021</string>
+    <string name="TxtEventosExp2NM">Nome: OSGEMEOS: segredos</string>
+    <string name="TxtEventosExp2LC">Local: Pinaconteca-SP</string>
+
+    <string name="TxtEventosExp3DT">Data: 24 a 26 de Jun 2021</string>
+    <string name="TxtEventosExp3NM">Nome: 19 Cultura Inglesa festival</string>
+    <string name="TxtEventosExp3LC">Local: OnLine</string>
+
+    <string name="TxtEventosExp4DT">Data: 12 set a 11 de out 2021</string>
+    <string name="TxtEventosExp4NM">Nome: 10 Amostra 3M de arte</string>
+    <string name="TxtEventosExp4LC">Local: Online</string>
+
+    <!--Stand up-->
+    <string name="TxtEventosStand1DT">Data: 24 set 2021</string>
+    <string name="TxtEventosStand1NM">Nome: Inter Ligados</string>
+    <string name="TxtEventosStand1LC">Local: Jaú -Sp</string>
+
+    <string name="TxtEventosStand2DT">Data: 08 out 2021</string>
+    <string name="TxtEventosStand2NM">Nome: Novas Historias</string>
+    <string name="TxtEventosStand2LC">Local: Teatro desafio -Sp</string>
+
+    <string name="TxtEventosStand3DT">Data: 21 out 2021</string>
+    <string name="TxtEventosStand3NM">Nome: A vida é muito boa ne?</string>
+    <string name="TxtEventosStand3LC">Local: Jundiaí-Sp</string>
+
+    <string name="TxtEventosStand4DT">Data: 26 set 2021</string>
+    <string name="TxtEventosStand4NM">Nome: Stand Up Raiz</string>
+    <string name="TxtEventosStand4LC">Local: Black House -Sp</string>
+
+    <!--Palestra-->
+    <string name="TxtEventosPalet1DT">Data: 24 out 2021</string>
+    <string name="TxtEventosPalet1NM">Nome: 72 Dias - Mostra artística sobre a Comuna de Paris</string>
+    <string name="TxtEventosPalet1LC">Local: Online</string>
+
+    <string name="TxtEventosPalet2DT">Data: 30 out 2021</string>
+    <string name="TxtEventosPalet2NM">Nome: Direito e sexualidade</string>
+    <string name="TxtEventosPalet2LC">Local: Online</string>
+
+    <string name="TxtEventosPalet3DT">Data: 08 out 2021</string>
+    <string name="TxtEventosPalet3NM">Nome: Setembro Amarerelo, não de as costas</string>
+    <string name="TxtEventosPalet3LC">Local: Online</string>
+
+    <string name="TxtEventosPalet4DT">Data: 03 out 2021</string>
+    <string name="TxtEventosPalet4NM">Nome: Autismo na vida adulta</string>
+    <string name="TxtEventosPalet4LC">Local: Online</string>
+
+
+
 
     <!--Tela favoritos-->
     <string name="TxtFavoritos">Favoritos</string>

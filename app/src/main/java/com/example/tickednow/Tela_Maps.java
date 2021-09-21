@@ -70,6 +70,14 @@ public class Tela_Maps extends AppCompatActivity implements OnMapReadyCallback {
                 TelaMeusIngresso();
             }
         });
+
+        ImageButton imgBtnHome = (ImageButton) findViewById(R.id.imgBtnHome);
+        imgBtnHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TelaHome();
+            }
+        });
     }
 
     @Override
@@ -215,12 +223,11 @@ public class Tela_Maps extends AppCompatActivity implements OnMapReadyCallback {
     }
 
     //telas
-    //tela ainda não existe
-    /*
     public  void TelaHome(){
-        Intent escolhaIngresso = new Intent(getApplicationContext(), EscolhaIngresso.class);
-        startActivity(escolhaIngresso);
-    }*/
+        Intent home = new Intent(getApplicationContext(), Tela_Home.class);
+        startActivity(home);
+        finish();
+    }
 
     public  void TelaFavoritos(){
         Intent Favoritos = new Intent(getApplicationContext(), Favortios.class);

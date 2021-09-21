@@ -6,7 +6,8 @@ import androidx.cardview.widget.CardView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
+import android.widget.ImageView;
 
 public class Pesquisa_evento extends AppCompatActivity {
 
@@ -22,11 +23,24 @@ public class Pesquisa_evento extends AppCompatActivity {
                 InfoEventos();
             }
         });
+
+        ImageView ImgBtnVoltaHome = (ImageView) findViewById(R.id.ImgBtnVoltaHome);
+        ImgBtnVoltaHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TelaHome();
+            }
+        });
     }
 
     public  void InfoEventos(){
         Intent InfoEventos = new Intent(getApplicationContext(), InfoEvento.class);
         startActivity(InfoEventos);
+    }
+
+    public  void TelaHome(){
+        Intent Tela_Home = new Intent(getApplicationContext(), Tela_Home.class);
+        startActivity(Tela_Home);
     }
 }
 

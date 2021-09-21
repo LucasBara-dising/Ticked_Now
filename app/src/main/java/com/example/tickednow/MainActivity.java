@@ -16,7 +16,7 @@ public class MainActivity extends AppCompatActivity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                //startActivity(new Intent(getBaseContext(),Home.class));
+                startActivity(new Intent(getBaseContext(),Tela_Home.class));
                 finish();
             }
         },4000);

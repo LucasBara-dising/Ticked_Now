@@ -3,11 +3,13 @@ package com.example.tickednow;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 
 public class InfoEvento extends AppCompatActivity {
@@ -31,6 +33,18 @@ public class InfoEvento extends AppCompatActivity {
             public void onClick(View v) {
                 TelaPesquisa();
                 finish();
+            }
+        });
+
+        //abir maps ao clicar no nome do teatro
+        TextView TXTlocalEvento=(TextView)findViewById(R.id.TXTlocalEvento);
+        TXTlocalEvento.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick (View v){
+                String LocalEvento = getResources().getString(R.string.TxtLocal);
+                Uri location= Uri.parse("geo:0,0?q="+LocalEvento);
+                Intent maps = new Intent(Intent.ACTION_VIEW,location);
+                startActivity(maps);
             }
         });
     }

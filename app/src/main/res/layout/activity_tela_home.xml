@@ -1,0 +1,1021 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".Tela_Home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/txtView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="184dp"
+                android:text="@string/TxtCategorias"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView2"
+                android:layout_width="match_parent"
+                android:layout_height="90dp"
+                android:scrollbarSize="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton2"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="35dp"
+                        android:layout_marginTop="0dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:clickable="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/imageedit_8_8435722921" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="-71dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:clickable="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/imageedit_5_3276010374" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton4"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="185dp"
+                        android:layout_marginTop="-71dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:clickable="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/imageedit_1_5820556022" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="260dp"
+                        android:layout_marginTop="-71dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:clickable="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/imageedit_1_5441742476" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton5"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginStart="335dp"
+                        android:layout_marginTop="-71dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:clickable="true"
+                        android:scaleType="centerInside"
+                        app:srcCompat="@drawable/imageedit_3_9004734579" />
+
+                    <TextView
+                        android:id="@+id/txtView1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="37dp"
+                        android:layout_marginTop="-5dp"
+                        android:text="@string/TxtEspetaculos"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtView32"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="124dp"
+                        android:layout_marginTop="-16dp"
+                        android:text="@string/TxtEventos"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtView33"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="195dp"
+                        android:layout_marginTop="-17dp"
+                        android:text="@string/TxtStandUp"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtView34"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="264dp"
+                        android:layout_marginTop="-17dp"
+                        android:text="@string/TxtExposicoes"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+
+                    <TextView
+                        android:id="@+id/txtView35"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="352dp"
+                        android:layout_marginTop="-17dp"
+                        android:text="@string/TxtShows"
+                        android:textColor="@color/black"
+                        android:textSize="12sp" />
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/TxtDestaque"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="14dp"
+                android:text="@string/TxtDestaques"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView3"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:layout_marginBottom="20dp"
+                android:scrollbarAlwaysDrawHorizontalTrack="false"
+                android:scrollbarAlwaysDrawVerticalTrack="false"
+                android:scrollbarSize="0dp"
+                android:visibility="visible"
+                tools:visibility="visible">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton6"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        app:srcCompat="@drawable/destaque1" />
+
+                    <ImageButton
+                        android:id="@+id/ImgPoster"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="190dp"
+                        app:srcCompat="@drawable/poster1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton8"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="350dp"
+                        app:srcCompat="@drawable/destaque3" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton9"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="540dp"
+                        app:srcCompat="@drawable/destaque4" />
+
+                    <TextView
+                        android:id="@+id/txtView52"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="480dp"
+                        android:text="@string/TxtCategorias"
+                        android:textColor="@color/black"
+                        android:textSize="26sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtView86"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="8dp"
+                android:text="@string/TxtShows"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:scrollbarSize="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton15"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        app:srcCompat="@drawable/poster3" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton16"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="190dp"
+                        app:srcCompat="@drawable/poster4" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton17"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="370dp"
+                        app:srcCompat="@drawable/poster2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton18"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="550dp"
+                        app:srcCompat="@drawable/poster1" />
+
+                    <TextView
+                        android:id="@+id/txtView90"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosShow1DT" />
+
+                    <TextView
+                        android:id="@+id/txtView91"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosShow1NM" />
+
+                    <TextView
+                        android:id="@+id/txtView92"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosShow1LC" />
+
+
+                    <TextView
+                        android:id="@+id/txtView93"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="220dp"
+                        android:layout_marginTop="-80dp"
+                        android:text="@string/TxtEventosShow2DT" />
+
+                    <TextView
+                        android:id="@+id/txtView98"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="220dp"
+                        android:text="@string/TxtEventosShow2NM" />
+
+                    <TextView
+                        android:id="@+id/txtView100"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="220dp"
+                        android:text="@string/TxtEventosShow2LC" />
+
+
+                    <TextView
+                        android:id="@+id/txtView101"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="390dp"
+                        android:layout_marginTop="-60dp"
+                        android:text="@string/TxtEventosShow3DT" />
+
+                    <TextView
+                        android:id="@+id/txtView102"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="390dp"
+                        android:text="@string/TxtEventosShow3NM" />
+
+                    <TextView
+                        android:id="@+id/txtView103"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="390dp"
+                        android:text="@string/TxtEventosShow3LC" />
+
+                    <TextView
+                        android:id="@+id/txtView104"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="580dp"
+                        android:layout_marginTop="-70dp"
+                        android:text="@string/TxtEventosShow4DT" />
+
+                    <TextView
+                        android:id="@+id/txtView105"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="580dp"
+                        android:text="@string/TxtEventosShow4NM" />
+
+                    <TextView
+                        android:id="@+id/txtView106"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="580dp"
+                        android:text="@string/TxtEventosShow4LC" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtView61"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/TxtEspetaculos"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:scrollbarSize="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton19"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        app:srcCompat="@drawable/peca1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton20"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="190dp"
+                        app:srcCompat="@drawable/peca2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton21"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="350dp"
+                        app:srcCompat="@drawable/peca3" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton22"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="500dp"
+                        app:srcCompat="@drawable/peca4" />
+
+                    <TextView
+                        android:id="@+id/txtView107"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosPeca1DT" />
+
+                    <TextView
+                        android:id="@+id/txtView108"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosPeca1NM" />
+
+                    <TextView
+                        android:id="@+id/txtView109"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosPeca1LC" />
+
+                    <TextView
+                        android:id="@+id/txtView110"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="210dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="@string/TxtEventosPeca2DT" />
+
+                    <TextView
+                        android:id="@+id/txtView111"
+                        style="@style/txtEventos"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="210dp"
+                        android:text="@string/TxtEventosPeca2NM" />
+
+                    <TextView
+                        android:id="@+id/txtView112"
+                        style="@style/txtEventos"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="210dp"
+                        android:text="@string/TxtEventosPeca2LC" />
+
+                    <TextView
+                        android:id="@+id/txtView113"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="390dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="@string/TxtEventosPeca3DT" />
+
+                    <TextView
+                        android:id="@+id/txtView114"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="390dp"
+                        android:text="@string/TxtEventosPeca3NM" />
+
+                    <TextView
+                        android:id="@+id/txtView115"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="390dp"
+                        android:text="@string/TxtEventosPeca3LC" />
+
+                    <TextView
+                        android:id="@+id/txtView116"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="550dp"
+                        android:layout_marginTop="-80dp"
+                        android:text="@string/TxtEventosPeca4DT" />
+
+                    <TextView
+                        android:id="@+id/txtView117"
+                        style="@style/txtEventos"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="550dp"
+                        android:text="@string/TxtEventosPeca4NM" />
+
+                    <TextView
+                        android:id="@+id/txtView118"
+                        style="@style/txtEventos"
+                        android:layout_height="50dp"
+                        android:layout_marginStart="550dp"
+                        android:text="@string/TxtEventosPeca4LC" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtView999"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/TxtExposicoes"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:scrollbarSize="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="220dp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton11"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        app:srcCompat="@drawable/exposisao1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton12"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="190dp"
+                        app:srcCompat="@drawable/exposisao2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton13"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="390dp"
+                        app:srcCompat="@drawable/exposissao3" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton14"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="590dp"
+                        app:srcCompat="@drawable/exposisao4" />
+
+                    <TextView
+                        android:id="@+id/txtView62"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosExp1DT" />
+
+                    <TextView
+                        android:id="@+id/txtView63"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosExp1NM" />
+
+                    <TextView
+                        android:id="@+id/txtView64"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosExp1LC" />
+
+                    <TextView
+                        android:id="@+id/txtView67"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="210dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="@string/TxtEventosExp2DT" />
+
+                    <TextView
+                        android:id="@+id/txtView66"
+                        style="@style/txtEventos"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="210dp"
+                        android:text="@string/TxtEventosExp2NM" />
+
+                    <TextView
+                        android:id="@+id/txtView65"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="210dp"
+                        android:text="@string/TxtEventosExp2LC" />
+
+                    <TextView
+                        android:id="@+id/txtView68"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="410dp"
+                        android:layout_marginTop="-95dp"
+                        android:text="@string/TxtEventosExp3DT" />
+
+                    <TextView
+                        android:id="@+id/txtView69"
+                        style="@style/txtEventos"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="410dp"
+                        android:text="@string/TxtEventosExp3NM" />
+
+                    <TextView
+                        android:id="@+id/txtView70"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="410dp"
+                        android:text="@string/TxtEventosExp3LC" />
+
+                    <TextView
+                        android:id="@+id/txtView71"
+                        style="@style/txtEventos"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="610dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="@string/TxtEventosExp4DT" />
+
+                    <TextView
+                        android:id="@+id/txtView72"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="610dp"
+                        android:text="@string/TxtEventosExp4NM" />
+
+                    <TextView
+                        android:id="@+id/txtView73"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="610dp"
+                        android:text="@string/TxtEventosExp4LC" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtView8"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/TxtStandUp"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:scrollbarSize="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton23"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        app:srcCompat="@drawable/standup1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton24"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="190dp"
+                        app:srcCompat="@drawable/standup2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton25"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="370dp"
+                        app:srcCompat="@drawable/staundup3" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton26"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="540dp"
+                        app:srcCompat="@drawable/standup4" />
+
+                    <TextView
+                        android:id="@+id/txtView119"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosStand1DT" />
+
+                    <TextView
+                        android:id="@+id/txtView120"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosStand1NM" />
+
+                    <TextView
+                        android:id="@+id/txtView121"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosStand1LC" />
+
+                    <TextView
+                        android:id="@+id/txtView122"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="210dp"
+                        android:layout_marginTop="-50dp"
+                        android:text="@string/TxtEventosStand2DT" />
+
+                    <TextView
+                        android:id="@+id/txtView123"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="210dp"
+                        android:text="@string/TxtEventosStand2NM" />
+
+                    <TextView
+                        android:id="@+id/txtView124"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="210dp"
+                        android:text="@string/TxtEventosStand2LC"  />
+
+                    <TextView
+                        android:id="@+id/txtView125"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="390dp"
+                        android:layout_marginTop="-70dp"
+                        android:text="@string/TxtEventosStand3DT" />
+
+                    <TextView
+                        android:id="@+id/txtView126"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="390dp"
+                        android:text="@string/TxtEventosStand3NM" />
+
+                    <TextView
+                        android:id="@+id/txtView127"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="390dp"
+                        android:layout_height="20dp"
+                        android:text="@string/TxtEventosStand3LC" />
+
+                    <TextView
+                        android:id="@+id/txtView128"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="560dp"
+                        android:layout_marginTop="-80dp"
+                        android:text="@string/TxtEventosStand4DT" />
+
+                    <TextView
+                        android:id="@+id/txtView129"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="560dp"
+                        android:layout_height="20dp"
+                        android:text="@string/TxtEventosStand4NM" />
+
+                    <TextView
+                        android:id="@+id/txtView130"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="560dp"
+                        android:layout_height="20dp"
+                        android:text="@string/TxtEventosStand4LC" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:id="@+id/txtView9"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="35dp"
+                android:layout_marginTop="0dp"
+                android:text="@string/TxtPalestras"
+                android:textColor="@color/black"
+                android:textSize="26sp"
+                android:textStyle="bold" />
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="210dp"
+                android:layout_marginBottom="100dp"
+                android:scrollbarSize="0dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="250dp"
+                    android:orientation="vertical">
+
+                    <ImageButton
+                        android:id="@+id/imageButton27"
+                        style="@style/ImgEventos"
+                        android:layout_width="170dp"
+                        android:layout_marginStart="0dp"
+                        android:layout_marginTop="0dp"
+                        app:srcCompat="@drawable/palestre1" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton28"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="170dp"
+                        app:srcCompat="@drawable/palestra2" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton29"
+                        style="@style/ImgEventos"
+                        android:layout_width="190dp"
+                        android:layout_marginStart="360dp"
+                        app:srcCompat="@drawable/palestra3" />
+
+                    <ImageButton
+                        android:id="@+id/imageButton30"
+                        style="@style/ImgEventos"
+                        android:layout_marginStart="550dp"
+                        app:srcCompat="@drawable/palestra4" />
+
+                    <TextView
+                        android:id="@+id/txtView131"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosPalet1DT" />
+
+                    <TextView
+                        android:id="@+id/txtView132"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosPalet1NM" />
+
+                    <TextView
+                        android:id="@+id/txtView133"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="20dp"
+                        android:text="@string/TxtEventosPalet1LC" />
+
+                    <TextView
+                        android:id="@+id/txtView134"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="190dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="@string/TxtEventosPalet2DT" />
+
+                    <TextView
+                        android:id="@+id/txtView135"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="190dp"
+                        android:text="@string/TxtEventosPalet2NM" />
+
+                    <TextView
+                        android:id="@+id/txtView136"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="190dp"
+                        android:text="@string/TxtEventosPalet2LC"  />
+
+                    <TextView
+                        android:id="@+id/txtView137"
+                        style="@style/txtEventos"
+                        android:layout_marginStart="380dp"
+                        android:layout_marginTop="-70dp"
+                        android:layout_height="20dp"
+                        android:text="@string/TxtEventosPalet3DT" />
+
+                    <TextView
+                        android:id="@+id/txtView138"
+                        style="@style/txtEventos"
+                        android:layout_height="45dp"
+                        android:layout_marginStart="380dp"
+                        android:text="@string/TxtEventosPalet3NM"/>
+
+                    <TextView
+                        android:id="@+id/txtView139"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="380dp"
+                        android:text="@string/TxtEventosPalet3LC"/>
+
+                    <TextView
+                        android:id="@+id/txtView140"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="570dp"
+                        android:layout_marginTop="-90dp"
+                        android:text="@string/TxtEventosPalet4DT" />
+
+                    <TextView
+                        android:id="@+id/txtView141"
+                        style="@style/txtEventos"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="570dp"
+                        android:text="@string/TxtEventosPalet4NM" />
+
+                    <TextView
+                        android:id="@+id/txtView142"
+                        style="@style/txtEventos"
+                        android:layout_height="20dp"
+                        android:layout_marginStart="570dp"
+                        android:text="@string/TxtEventosPalet4LC" />
+
+                </LinearLayout>
+            </HorizontalScrollView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <View
+        android:id="@+id/myRectangleView2"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:background="@drawable/hearder_pesquisa"
+        app:layout_constraintHorizontal_bias="0.879"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <ImageButton
+            android:id="@+id/imgBtnLoc"
+            android:layout_height="45dp"
+            android:layout_width="45dp"
+            style="@style/IconBottomBar"
+            android:layout_gravity="start"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/localizacao"/>
+
+        <ImageButton
+            android:id="@+id/imgBtnHome"
+            style="@style/IconBottomBar"
+            android:layout_gravity="center"
+            android:layout_marginTop="-6dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/casa" />
+
+        <ImageButton
+            android:id="@+id/imgBtnIngre"
+            style="@style/IconBottomBar"
+            android:layout_gravity="center"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="-6dp"
+            android:background="@drawable/bilhete"/>
+
+        <ImageButton
+            android:id="@+id/imgBtnFav"
+            style="@style/IconBottomBar"
+            android:layout_gravity="end"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="48dp"
+            android:background="@drawable/favorito" />
+
+        <TextView
+            android:id="@+id/textView43"
+            style="@style/TxtBottomBar"
+            android:layout_gravity="start"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/TxtLocBar"/>
+
+        <TextView
+            android:id="@+id/textView40"
+            style="@style/TxtBottomBar"
+            android:layout_gravity="center"
+            android:layout_marginEnd="40dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/TxtHomesBar"/>
+
+        <TextView
+            android:id="@+id/textView41"
+            style="@style/TxtBottomBar"
+            android:layout_gravity="center"
+            android:layout_marginStart="45dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/TxtIngressoBar"/>
+
+        <TextView
+            android:id="@+id/textView42"
+            style="@style/TxtBottomBar"
+            android:layout_gravity="end"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="35dp"
+            android:text="@string/TxtFavoritosBar"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/ImgBtnConta"
+        android:layout_width="47dp"
+        android:layout_height="49dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerInside"
+        app:layout_constraintHorizontal_bias="0.956"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/conta_icon" />
+
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="32dp"
+        android:layout_height="33dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintHorizontal_bias="0.048"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/sino" />
+
+    <EditText
+        android:id="@+id/TxtEdtPesquisa"
+        android:layout_width="300dp"
+        android:layout_height="38dp"
+        android:layout_gravity="center"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="82dp"
+        android:autofillHints="@string/TxtProcurar"
+        android:background="@drawable/borda_bar_de_pesquisa"
+        android:backgroundTint="#F1F1F1"
+        android:drawableStart="?android:attr/actionModeWebSearchDrawable"
+        android:drawablePadding="5dp"
+        android:hint="@string/TxtProcurar"
+        android:inputType="textPersonName"
+        android:maxWidth="300dp"
+        android:paddingStart="12dp"
+        android:paddingEnd="8dp"
+        android:text=""
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.469"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imgBtnFiltro"
+        android:layout_width="47dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="75dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="centerInside"
+        app:layout_constraintHorizontal_bias="0.851"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ajustamento" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,6 +14,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity
+            android:name=".Favortios"
+            android:exported="true" />
+        <activity
             android:name=".Meus_Ingressos"
             android:exported="true" />
 
@@ -25,17 +28,17 @@
             android:name=".InfoEvento"
             android:exported="true" />
         <activity
-            android:name=".Pesquisa_evento"
+            android:name=".Tela_Home"
             android:exported="true" />
         <activity
             android:name=".Conta"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Pesquisa_evento"
             android:exported="true" />
         <activity android:name=".EscolhaIngresso" />
         <activity android:name=".Tela_Maps" />
-        <activity android:name=".Favortios">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
