@@ -18,6 +18,18 @@
     <string name="TxtIngressos">Ingressos</string>
     <string name="TxtProcurar">Procurar por um destino</string>
 
+    <!-- Login-->
+    <string name="TxtEmail">Email</string>
+    <string name="Txtsenha">Senha</string>
+    <string name="TxtBtnLogar">Entrar</string>
+    <string name="TxtLogin">Login</string>
+    <string name="TxtLoginBemVindo">Seja Bem-vindo!</string>
+    <string name="TxtFormaDeLogin">Entre Com</string>
+    <string name="TxtOu">OU</string>
+    <string name="TxtShowSenha">Mostrar senha</string>
+    <string name="descImgLogoGoogle">Logo Google</string>
+    <string name="descImgLogoFacebook">Logo Facebook</string>
+
 <!--Shows-->
     <string name="TxtEventosShow1DT">Data: 27 de ago de 2022 - 28 de ago</string>
     <string name="TxtEventosShow1NM">Nome:Festival Sarará 2022</string>
