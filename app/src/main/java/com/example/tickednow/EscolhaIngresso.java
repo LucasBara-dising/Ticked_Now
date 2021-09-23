@@ -151,7 +151,7 @@ public class EscolhaIngresso extends AppCompatActivity {
         }
         String total=Double.toString(totalVl);
         TextView textviewTotal= (TextView) findViewById(R.id.textviewTotal);
-        textviewTotal.setText(total);
+        textviewTotal.setText("R$" + total);
     }
 
     public  void InfoEventos(){

@@ -49,48 +49,35 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <ImageButton
-        android:id="@+id/BtnLogarComFecebook"
-        android:layout_width="125dp"
+    <EditText
+        android:id="@+id/BoxNome"
+        android:layout_width="0dp"
         android:layout_height="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="216dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="240dp"
+        android:layout_marginEnd="24dp"
+        android:autofillHints="@string/TxtEmail"
         android:background="@drawable/borda_aredondada"
-        android:contentDescription="@string/descImgLogoGoogle"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/google"
-        app:layout_constraintHorizontal_bias="0.856"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <ImageButton
-        android:id="@+id/BtnLogarComGoogle"
-        android:layout_width="125dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="216dp"
-        android:background="@drawable/borda_aredondada"
-        android:contentDescription="@string/descImgLogoFacebook"
-        android:paddingTop="10dp"
-        android:paddingBottom="10dp"
-        android:scaleType="centerInside"
-        android:src="@drawable/facebook"
-        app:layout_constraintHorizontal_bias="0.129"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
+        android:hint="@string/TxtNome"
+        android:inputType="textPersonName"
+        android:paddingStart="20dp"
+        android:paddingBottom="5dp"
+        android:selectAllOnFocus="true"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtView3"
+        android:id="@+id/txtView6"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="164dp"
-        android:text="@string/TxtFormaDeLogin"
+        android:layout_marginTop="296dp"
+        android:text="@string/TxtEmail"
         android:textColor="@color/black"
         android:textSize="20sp"
-        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintHorizontal_bias="0.067"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -100,90 +87,47 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:layout_marginStart="24dp"
-        android:layout_marginTop="340dp"
+        android:layout_marginTop="48dp"
         android:layout_marginEnd="24dp"
         android:autofillHints="@string/TxtEmail"
         android:background="@drawable/borda_aredondada"
         android:hint="@string/TxtEmail"
+        android:imeActionLabel="@string/TxtEmail"
+        android:imeOptions="actionDone"
         android:inputType="textEmailAddress"
+        android:paddingStart="20dp"
         android:paddingBottom="5dp"
         android:selectAllOnFocus="true"
         android:textColor="@color/black"
-        android:paddingStart="20dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/BoxNome" />
+
+    <Button
+        android:id="@+id/btnlogin"
+        android:layout_width="245dp"
+        android:layout_height="70dp"
+        android:enabled="true"
+        android:text="@string/TxtBtnLogar"
+        android:textColor="@color/white"
+        app:backgroundTint="@color/AzulClaro"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/BoxEmail"
+        app:layout_constraintVertical_bias="0.15" />
 
     <TextView
         android:id="@+id/txtView5"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="300dp"
-        android:text="@string/TxtEmail"
+        android:layout_marginTop="200dp"
+        android:text="@string/TxtNome"
         android:textColor="@color/black"
         android:textSize="20sp"
         app:layout_constraintHorizontal_bias="0.066"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtView4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="276dp"
-        android:text="@string/TxtOu"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintHorizontal_bias="0.489"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/txtView6"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="396dp"
-        android:text="@string/Txtsenha"
-        android:textColor="@color/black"
-        android:textSize="20sp"
-        app:layout_constraintHorizontal_bias="0.067"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <EditText
-        android:id="@+id/BoxSenha"
-        android:layout_width="0dp"
-        android:layout_height="50dp"
-        android:layout_marginStart="24dp"
-        android:layout_marginTop="56dp"
-        android:layout_marginEnd="24dp"
-        android:autofillHints="@string/Txtsenha"
-        android:background="@drawable/borda_aredondada"
-        android:hint="@string/Txtsenha"
-        android:imeActionLabel="@string/TxtLogin"
-        android:imeOptions="actionDone"
-        android:inputType="textPassword"
-        android:paddingBottom="5dp"
-        android:selectAllOnFocus="true"
-        android:textColor="@color/black"
-        android:paddingStart="20dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BoxEmail" />
-
-    <CheckBox
-        android:id="@+id/ckBoxShowSenha"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="505dp"
-        android:text="@string/TxtShowSenha"
-        android:textColor="@color/black"
-        app:layout_constraintHorizontal_bias="0.083"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -199,25 +143,10 @@
         android:layout_marginBottom="64dp"
         android:visibility="gone"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/BoxSenha"
-        app:layout_constraintStart_toStartOf="@+id/BoxSenha"
+        app:layout_constraintEnd_toEndOf="@+id/BoxEmail"
+        app:layout_constraintStart_toStartOf="@+id/BoxEmail"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.3" />
-
-    <Button
-        android:id="@+id/btnlogin"
-        android:layout_width="245dp"
-        android:layout_height="70dp"
-        android:enabled="true"
-        android:text="@string/TxtBtnLogar"
-        android:textColor="@color/white"
-        app:backgroundTint="@color/AzulClaro"
-        app:cornerRadius="20dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BoxSenha"
-        app:layout_constraintVertical_bias="0.548" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
