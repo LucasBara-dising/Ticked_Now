@@ -95,7 +95,7 @@ public class Tela_Maps extends AppCompatActivity implements OnMapReadyCallback {
         mGoogleMap = googleMap;
 
         mLocationRequest = new LocationRequest();
-        mLocationRequest.setInterval(120000); // dois minutos de intervalo
+        mLocationRequest.setInterval(120000);
         mLocationRequest.setFastestInterval(120000);
         //localizacao quase exata
         mLocationRequest.setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY);
@@ -105,6 +105,7 @@ public class Tela_Maps extends AppCompatActivity implements OnMapReadyCallback {
             if (ContextCompat.checkSelfPermission(this,
                     Manifest.permission.ACCESS_FINE_LOCATION)
                     == PackageManager.PERMISSION_GRANTED) {
+
                 //Com permissoes concedias
                 mFusedLocationClient.requestLocationUpdates(mLocationRequest, mLocationCallback,
                         Looper.myLooper());
@@ -162,6 +163,7 @@ public class Tela_Maps extends AppCompatActivity implements OnMapReadyCallback {
         }
     };
 
+    //checar a permissão
     public static final int MY_PERMISSIONS_REQUEST_LOCATION = 99;
     private void checkLocationPermission() {
         if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
@@ -169,7 +171,7 @@ public class Tela_Maps extends AppCompatActivity implements OnMapReadyCallback {
 
             if (ActivityCompat.shouldShowRequestPermissionRationale(this,
                     Manifest.permission.ACCESS_FINE_LOCATION)) {
-
+                //caso não tenha permissao mostra uma mnessagen pedindo
                 new AlertDialog.Builder(this)
                         .setTitle("Permissão de Localização nessesaria")
                         .setMessage("Esta Função nessesita da localização para funcionar")
@@ -184,7 +186,7 @@ public class Tela_Maps extends AppCompatActivity implements OnMapReadyCallback {
                         .create()
                         .show();
             } else {
-                //soliita permissao
+                //soliita permissao ja consedida
                 ActivityCompat.requestPermissions(this,
                         new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
                         MY_PERMISSIONS_REQUEST_LOCATION );
@@ -200,12 +202,10 @@ public class Tela_Maps extends AppCompatActivity implements OnMapReadyCallback {
             case MY_PERMISSIONS_REQUEST_LOCATION: {
                 if (grantResults.length > 0 && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
                     //permissao concedida
-                    if (ContextCompat.checkSelfPermission(this,
-                            Manifest.permission.ACCESS_FINE_LOCATION)
+                    if (ContextCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION)
                             == PackageManager.PERMISSION_GRANTED) {
 
-                        mFusedLocationClient.requestLocationUpdates(mLocationRequest,
-                                mLocationCallback, Looper.myLooper());
+                        mFusedLocationClient.requestLocationUpdates(mLocationRequest,mLocationCallback, Looper.myLooper());
                         mGoogleMap.setMyLocationEnabled(true);
                     }
 
