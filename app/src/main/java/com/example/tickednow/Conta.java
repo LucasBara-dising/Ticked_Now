@@ -3,6 +3,7 @@ package com.example.tickednow;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
@@ -15,19 +16,23 @@ import org.w3c.dom.Text;
 public class Conta extends AppCompatActivity {
 
    // private Button infoConta;
+    private TextView txtNome;
+    private TextView txtEmail;
+    private final String ARQUIVO_PREFERENCIA = "ArquivoPreferencia";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_conta);
 
-        Intent intent = getIntent();
-        String nome = (String) intent.getSerializableExtra("NomeLogin");
-        String email = (String) intent.getSerializableExtra("EmailLogin");
+        SharedPreferences preferences = getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
 
-        TextView txtNome = (TextView) findViewById(R.id.txtViewName);
+        String nome = (String) preferences.getString("nome", "");
+        String email = (String) preferences.getString("email", "");
+
+        txtNome = findViewById(R.id.txtViewName);
         txtNome.setText(nome);
-        TextView txtEmail = (TextView) findViewById(R.id.txtViewEmail);
+        txtEmail = findViewById(R.id.txtViewEmail);
         txtEmail.setText(email);
 
 

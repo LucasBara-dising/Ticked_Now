@@ -20,27 +20,33 @@ public class Login extends AppCompatActivity {
 
     public static final String NOME_LOGIN = "nome_login";
     public static final String EMAIL_LOGIN = "email_login";
+    private final String ARQUIVO_PREFERENCIA = "ArquivoPreferencia";
+    private EditText Loginame;
+    private EditText Loginemail;
+    private Button Logar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        final EditText Loginame = (EditText) findViewById(R.id.BoxNome);
-        final EditText Loginemail = (EditText) findViewById(R.id.BoxEmail);
+        Loginame = findViewById(R.id.BoxNome);
+        Loginemail = findViewById(R.id.BoxEmail);
 
-        Button Logar = (Button) findViewById(R.id.btnlogin);
+       Logar = findViewById(R.id.btnlogin);
 
         Logar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                SharedPreferences prefsLog = getSharedPreferences("preferenciasLogin", Context.MODE_PRIVATE);
-                SharedPreferences.Editor edLog = prefsLog.edit();
+                SharedPreferences preferences = getSharedPreferences(ARQUIVO_PREFERENCIA, 0);
+                SharedPreferences.Editor editor = preferences.edit();
 
-                edLog.putString(NOME_LOGIN, Loginame.getText().toString());
-                edLog.putString(EMAIL_LOGIN, Loginemail.getText().toString());
+                String nome = Loginame.getText().toString();
+                editor.putString("nome", nome);
+                String email = Loginemail.getText().toString();
+                editor.putString("email", email);
 
-                edLog.apply();
+                editor.commit();
                 Toast.makeText(getBaseContext(), "Login cadastrado com sucesso", Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(Login.this,Conta.class);
