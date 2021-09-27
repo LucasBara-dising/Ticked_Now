@@ -169,7 +169,7 @@
         app:layout_constraintTop_toBottomOf="@+id/divider3" />
 
     <TextView
-        android:id="@+id/txtView7"
+        android:id="@+id/txtViewName"
         style="@style/TxtIngressoPreco"
         android:text="@string/txtValorIdoso"
         app:layout_constraintStart_toStartOf="parent"

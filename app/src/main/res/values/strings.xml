@@ -30,7 +30,7 @@
     <string name="descImgLogoGoogle">Logo Google</string>
     <string name="descImgLogoFacebook">Logo Facebook</string>
 
-    <!--Shows-->
+<!--Shows-->
     <string name="TxtEventosShow1DT">Data: 27 de ago de 2022 - 28 de ago</string>
     <string name="TxtEventosShow1NM">Nome:Festival Sarará 2022</string>
     <string name="TxtEventosShow1LC">Local:Esplanada do Mineirão-MG</string>
@@ -47,7 +47,7 @@
     <string name="TxtEventosShow4NM">Nome: Ta Embarcado</string>
     <string name="TxtEventosShow4LC">Local:Teatro das Artes-SP</string>
 
-    <!--pecas-->
+<!--pecas-->
     <string name="TxtEventosPeca1DT">Data: 25 de set de 2021</string>
     <string name="TxtEventosPeca1NM">Nome: Peça O Juíz de Paz na Roça</string>
     <string name="TxtEventosPeca1LC">Local: Oficina De Atores Abel Santana-ES</string>
@@ -116,6 +116,8 @@
     <string name="TxtEventosPalet4LC">Local: Online</string>
 
 
+
+
     <!--Tela favoritos-->
     <string name="TxtFavoritos">Favoritos</string>
     <string name="TxtFavoritosMensagem">Você ainda não tem nem um evento favorito</string>
@@ -158,12 +160,12 @@
     <string name="TxtPais">País</string>
     <string name="TxtRUS">RUS</string>
     <string name="TxtInfoConta">Informações da minha conta</string>
+    <string name="TxtAlterarEmail">Alterar Email</string>
     <string name="TxtCuponsCred">Cupons e créditos</string>
     <string name="TxtTema">Escolha um tema</string>
     <string name="TxtPadrao">Padrão</string>
     <string name="TxtCom">Comunicação</string>
     <string name="TxtAvalie">Avalie o app</string>
-    <string name="TxtUserAvaliacao">Sua Avaliação</string>
     <string name="TxtHistorico">Historico de busca</string>
     <string name="TxtSuporte">Surporte</string>
     <string name="TxtInfoLegais">Informaçoes legais</string>
@@ -172,6 +174,12 @@
     <string name="TxtLogout">Fazer logout</string>
     <string name="TxtClaro">Tema</string>
     <string name="TxtEscuro">Escuro</string>
+
+    <!--============== Tela informações da conta================-->
+    <string name="TxtNome">Nome</string>
+    <string name="TxtSalvar">SALVAR</string>
+    <string name="TxtEditar">Editar</string>
+
     <string name="txtSuaAvaliacao">Sua Avaliação</string>
     <string name="txtEnviar">Enviar</string>
 
@@ -221,4 +229,14 @@
 
     <!-- chave api do google maps-->
     <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBbcdfu_p3Xgz_hDoZ8GcW0GFhqFOuD5zw</string>
+
+    <string name="title_activity_login">LoginActivity</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
 </resources>

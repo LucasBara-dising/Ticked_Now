@@ -76,7 +76,8 @@
                 android:layout_marginBottom="160dp"
                 android:background="@drawable/favorito_preenchido"
                 android:button="@color/AzulBase"
-                android:onClick="onCheckboxClicked"/>
+                android:clickable="true"
+                android:onClick="onCheckboxClicked" />
 
         </androidx.cardview.widget.CardView>
 
