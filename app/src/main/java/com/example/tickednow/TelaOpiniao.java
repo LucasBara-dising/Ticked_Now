@@ -47,6 +47,7 @@ public class TelaOpiniao extends AppCompatActivity {
 
             String mostraAvalicao = opinaouser;
 
+            //envia dados pra outra tela
             Intent intent = new Intent(this, Conta.class);
             intent.putExtra("mostraAvalicao", mostraAvalicao);
             startActivity(intent);

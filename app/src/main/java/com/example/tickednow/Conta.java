@@ -73,7 +73,4 @@ public class Conta extends AppCompatActivity {
         Intent opinao = new Intent(getApplicationContext(), TelaOpiniao.class);
         startActivity(opinao);
     }
-
-
-
 }
