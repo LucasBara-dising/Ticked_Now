@@ -44,6 +44,14 @@ public class Conta extends AppCompatActivity {
             }
         });
 
+        Button btnCupom = (Button) findViewById(R.id.btnCupom);
+        btnCupom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TelaCupom();
+            }
+        });
+
        // infoConta = (Button) findViewById(R.id.info_conta);
       //  infoConta.setOnClickListener(new View.OnClickListener() {
         //    @Override
@@ -59,6 +67,11 @@ public class Conta extends AppCompatActivity {
     public void TelaHome(){
         Intent home = new Intent(getApplicationContext(), Tela_Home.class);
         startActivity(home);
+        finish();
+    }
+    public void TelaCupom(){
+        Intent cupom = new Intent(getApplicationContext(), Cupom.class);
+        startActivity(cupom);
         finish();
     }
 }

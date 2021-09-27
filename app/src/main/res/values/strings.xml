@@ -179,6 +179,11 @@
     <string name="TxtEditar">Editar</string>
 
 
+    <!--============== Tela informações da conta================-->
+    <string name="TxtCodCupom">Insira o código do cupom</string>
+    <string name="TxtConfirmar">CONFIRMAR</string>
+
+
     <!-- ================Info evento================-->
     <string name="TxtNomeEvento">Ta Embarcado - FABIO RABIN</string>
     <string name="TxtClasseEvento">Stand up</string>
