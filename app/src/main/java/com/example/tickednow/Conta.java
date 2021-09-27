@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
+import android.widget.TextView;
 
 public class Conta extends AppCompatActivity {
 
@@ -21,6 +22,12 @@ public class Conta extends AppCompatActivity {
                 TelaHome();
             }
         });
+
+        //recebe o texto da tela opinao
+        TextView txtopinao = (TextView) findViewById(R.id.txtopinao);
+        Intent intent = getIntent();
+        String mostraAvalicao =intent.getStringExtra("mostraAvalicao");
+        txtopinao.setText(mostraAvalicao);
     }
 
     public  void TelaHome(){
@@ -28,4 +35,12 @@ public class Conta extends AppCompatActivity {
         startActivity(home);
         finish();
     }
+
+    public  void TelaOpinao(View view){
+        Intent opinao = new Intent(getApplicationContext(), TelaOpiniao.class);
+        startActivity(opinao);
+    }
+
+
+
 }

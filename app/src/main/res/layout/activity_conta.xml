@@ -98,7 +98,17 @@
             <Button
                 android:id="@+id/button5"
                 style="@style/BtnPadraoConta"
+                android:onClick="TelaOpinao"
                 android:text="@string/TxtAvalie"/>
+
+            <TextView
+                android:id="@+id/txtopinao"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_margin="10dp"
+                android:text="@string/TxtUserAvaliacao"
+                android:textColor="@color/black"
+                android:textSize="14sp"/>
 
             <Button
                 android:id="@+id/button6"
