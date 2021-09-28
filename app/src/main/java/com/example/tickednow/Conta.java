@@ -6,13 +6,10 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.ImageButton;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import org.w3c.dom.Text;
-import android.widget.TextView;
 
 public class Conta extends AppCompatActivity {
 
@@ -45,6 +42,14 @@ public class Conta extends AppCompatActivity {
             }
         });
 
+        Button btnCupom = (Button) findViewById(R.id.btnCupom);
+        btnCupom.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                TelaCupom();
+            }
+        });
+
        // infoConta = (Button) findViewById(R.id.info_conta);
       //  infoConta.setOnClickListener(new View.OnClickListener() {
         //    @Override
@@ -72,5 +77,10 @@ public class Conta extends AppCompatActivity {
     public  void TelaOpinao(View view){
         Intent opinao = new Intent(getApplicationContext(), TelaOpiniao.class);
         startActivity(opinao);
+    }
+
+    public  void TelaCupom(){
+        Intent cupom = new Intent(getApplicationContext(), Cupom.class);
+        startActivity(cupom);
     }
 }

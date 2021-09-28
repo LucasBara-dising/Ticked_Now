@@ -161,7 +161,7 @@
     <string name="TxtRUS">RUS</string>
     <string name="TxtInfoConta">Informações da minha conta</string>
     <string name="TxtAlterarEmail">Alterar Email</string>
-    <string name="TxtCuponsCred">Cupons e créditos</string>
+    <string name="TxtCuponsCred">Código de Desconto</string>
     <string name="TxtTema">Escolha um tema</string>
     <string name="TxtPadrao">Padrão</string>
     <string name="TxtCom">Comunicação</string>
@@ -180,8 +180,8 @@
     <string name="TxtSalvar">SALVAR</string>
     <string name="TxtEditar">Editar</string>
 
-    <string name="txtSuaAvaliacao">Sua Avaliação</string>
-    <string name="txtEnviar">Enviar</string>
+    <string name="TxtSuaAvaliacao">Sua Avaliação</string>
+    <string name="TxtEnviar">Enviar</string>
 
     <!--============== Tela informações da conta================-->
     <string name="TxtCodCupom">Insira o código do cupom</string>
